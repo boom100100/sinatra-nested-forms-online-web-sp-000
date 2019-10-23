@@ -4,23 +4,16 @@
 <%= @new_pirate.weight %>
 <%= @new_pirate.height %>
 
+<% i = 0 %>
+<% @ships.each do |ship| %>
+<% if i == 0 %>
+<% text = "Display your first ship here" %>
+<% else %>
+<% text = "Display your second ship here" %>
+<% end %>
+
+<h2><%= text %></h2>
+<%= ship.name %>
+<%= ship.type %>
+<%= ship.booty %>
 <%  %>
-<%  %>
-<%  %>
-<%  %>
-
-<h2>Display your first ship here</h2>
-
-
-<p><%  @ships[0].name %></p>
-<p></p>
-<p></p>
-
-
-
-
-<h2>Display your second ship here</h2>
-
-<p></p>
-<p></p>
-<p></p>
